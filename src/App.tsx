@@ -6,10 +6,11 @@ import List from "./components/List";
 function App() {
   const [todoText, setTodoText] = useState<string>("");
   const { tasks, addTask } = useTodoStore();
-
+  // handling typed value
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setTodoText(e.target.value);
   };
+  // add task
   const handleAddTask = () => {
     if (todoText.trim()) {
       addTask(todoText);

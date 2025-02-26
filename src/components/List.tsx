@@ -19,7 +19,7 @@ import { DraggableTask } from "./DraggableTask";
 const List: React.FC = () => {
   const { tasks, setTasks, deleteTask, toggleDone } = useTodoStore();
 
-  // Drag & Drop Sensors (for better UX)
+  // Drag & Drop Sensors (these are for better UX)
   const sensors = useSensors(
     useSensor(PointerSensor),
     useSensor(KeyboardSensor)
