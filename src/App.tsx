@@ -36,7 +36,7 @@ function App() {
         </button>
       </div>
       {todoText && <p className="text-slate-700">todo: {todoText}</p>}
-      {tasks.length > 0 && <List tasks={tasks} />}
+      {tasks.length > 0 && <List />}
     </main>
   );
 }
